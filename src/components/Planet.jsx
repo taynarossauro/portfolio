@@ -11,7 +11,7 @@ export function Planet(props) {
   const shapeContainer = useRef(null);
   const shperesContainer = useRef(null);
   const ringContainer = useRef(null);
-  const { nodes, materials } = useGLTF("/models/Planet.glb");
+  const { nodes, materials } = useGLTF("/portfolio/models/Planet.glb");
 
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -77,4 +77,4 @@ export function Planet(props) {
   );
 }
 
-useGLTF.preload("/models/Planet.glb");
+useGLTF.preload("/portfolio/models/Planet.glb");
